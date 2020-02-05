@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AdvertisementProductActivity"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/advertiseProduct_refresh">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/advertiseProduct_event"
+                    android:contentDescription="@string/attribute_event" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/ui_end_on"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:background="#41000000"
+                    android:id="@+id/advertiseProduct_dateAndTime" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/advertiseLinear1"
+                    android:layout_below="@id/advertiseProduct_dateAndTime"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/product"
+                        android:layout_gravity="center"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/advertiseProduct_productPicture1"
+                        android:contentDescription="@string/attribute_product_picture" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/advertiseProduct_productPicture2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:contentDescription="@string/attribute_product_picture"
+                            android:padding="10dp"
+                            android:src="@drawable/product" />
+
+                        <ImageView
+                            android:id="@+id/advertiseProduct_productPicture3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:contentDescription="@string/attribute_product_picture"
+                            android:padding="10dp"
+                            android:src="@drawable/product" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:id="@+id/advertiseProduct_video"
+                            android:background="@android:drawable/dialog_holo_light_frame"
+                            android:padding="12dp"
+                            android:src="@drawable/view_video"
+                            android:contentDescription="@string/attribute_product_video" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="10dp"
+                        android:id="@+id/advertiseLinear2"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/product_name"
+                                android:contentDescription="@string/ui_product_name" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/ui_product_name"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:id="@+id/advertiseProduct_productName"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/product_description"
+                                android:contentDescription="@string/ui_product_description" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/ui_product_description"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:id="@+id/advertiseProduct_description"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/product_prize"
+                                android:contentDescription="@string/ui_product_price" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="@string/ui_product_price"
+                                        android:textSize="17sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:id="@+id/advertiseProduct_productPrice" />
+
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/ui_product_price"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:id="@+id/advertiseProduct_discountPrice"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/ui_product_qty_available"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/_0"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:id="@+id/advertiseProduct_productQuantityAvailable"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/advertiseProduct_discountRelative">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/_0_off"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@color/colorAccent"
+                        android:id="@+id/advertiseProduct_discountPercent"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/advertiseLinear1">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="@string/ui_order_product"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:id="@+id/advertiseProduct_order"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        layout="@layout/main_navigation_toolbar_trans"
+        android:id="@+id/advertiseProduct_toolbar"/>
+
+    <ImageView
+        android:id="@+id/advertiseProduct_speaker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/price_percent_background"
+        android:contentDescription="@string/attribute_speaker_out"
+        android:padding="7dp"
+        android:src="@drawable/speaker" />
+
+</RelativeLayout>

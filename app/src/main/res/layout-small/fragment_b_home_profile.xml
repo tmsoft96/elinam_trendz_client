@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeProfileFragment"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/frag_img"
+                android:visibility="gone"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/profile_gif"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/text_round"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="35dp"
+                android:padding="5dp"
+                android:id="@+id/frag_rel"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/profile_image"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/fragmentProfile_profilePicture"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#d5150877"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/fragmentProfile_fullName"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:id="@+id/fragmentProfile_phoneNumber"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:id="@+id/fragmentProfile_email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:id="@+id/fragmentProfile_address"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_below="@id/frag_rel"
+                android:id="@+id/frag_rel2">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/edit_blue"
+                    android:id="@+id/fragmentProfile_edit"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/settings_blue"
+                    android:id="@+id/fragmentProfile_setting"
+                    android:layout_toRightOf="@id/fragmentProfile_edit"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cart"
+                    android:id="@+id/fragmentProfile_cart"
+                    android:layout_toRightOf="@id/fragmentProfile_setting"
+                    android:padding="5dp"/>
+
+
+            </RelativeLayout>
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.tmsoft.tm.elinamclient.fragment.OtherInnerFragment.FavoriteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/frag_rel2"
+                android:layout_marginTop="5dp"
+                tools:layout="@layout/fragment_favorite"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

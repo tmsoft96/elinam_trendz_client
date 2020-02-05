@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="x"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_round"
+        android:id="@+id/dialogPostDeliveryForm_close"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/dialogPostDeliveryForm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Box Delivery"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/dialogPostDeliveryForm_close"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/orderProduct_linear3"
+                    android:layout_marginTop="10dp">
+
+                    <Spinner
+                        android:id="@+id/dialogPostDeliveryForm_region"
+                        style="@style/Widget.AppCompat.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@drawable/textbox_white"
+                        android:entries="@array/regions"
+                        android:paddingLeft="20dp"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="District (Optional)"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/textbox_white"
+                        android:id="@+id/dialogPostDeliveryForm_district"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/region"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginBottom="7dp"/>
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Town Name"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/textbox_white"
+                        android:id="@+id/dialogPostDeliveryForm_townName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/street_name"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginBottom="7dp"/>
+
+
+                    <MultiAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="Box Number (In the form 'P.O.Box 794') and Other Information (Optional)"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/textbox_white"
+                        android:id="@+id/dialogPostDeliveryForm_boxNumber"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/box_number"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginBottom="7dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Make Payment"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:background="@drawable/button"
+                        android:id="@+id/dialogPostDeliveryForm_payment"
+                        android:layout_marginBottom="7dp"
+                        android:textColor="@color/white"
+                        android:layout_margin="15dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

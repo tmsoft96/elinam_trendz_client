@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OrderProductActivity">
+
+    <include
+        layout="@layout/main_navigation_toolbar"
+        android:id="@+id/orderProduct_toolBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/orderProduct_toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear1">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/product"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:id="@+id/orderProduct_productPicture1"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginRight="15dp"
+                       android:layout_marginLeft="15dp"
+                       android:background="@android:drawable/dialog_holo_light_frame"
+                       android:layout_below="@id/orderProduct_productPicture1">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_margin="5dp">
+
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:background="@drawable/product_name"
+                               android:layout_margin="10dp"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:text="Product Name"
+                               android:textSize="17dp"
+                               android:textStyle="bold"
+                               android:textColor="@color/colorPrimaryDark"
+                               android:id="@+id/orderProduct_productName"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_margin="5dp">
+
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:background="@drawable/product_prize"
+                               android:layout_margin="10dp"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="10dp"
+                               android:text="Product Price"
+                               android:textSize="17dp"
+                               android:textStyle="bold"
+                               android:textColor="@color/colorPrimaryDark"
+                               android:id="@+id/orderProduct_productPrice"/>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="15dp"
+                       android:layout_marginRight="15dp"
+                       android:id="@id/linear2"
+                       android:padding="15dp"
+                       android:orientation="horizontal"
+                       android:gravity="center"
+                       android:background="@android:drawable/dialog_holo_light_frame">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Quantity : "
+                           android:textSize="17dp"
+                           android:textStyle="bold"
+                           android:textColor="@color/colorPrimaryDark"
+                           android:id="@+id/quan"/>
+
+                       <EditText
+                           android:layout_width="100dp"
+                           android:layout_height="45dp"
+                           android:textColorHint="@color/colorPrimaryDark"
+                           android:background="@drawable/chat_textbox"
+                           android:id="@+id/orderProduct_quantityNUmber"
+                           android:textColor="@color/colorPrimaryDark"
+                           android:layout_marginStart="15dp"
+                           android:layout_marginEnd="15dp"
+                           android:drawablePadding="10dp"
+                           android:paddingStart="15dp"
+                           android:paddingEnd="15dp"
+                           android:inputType="number"
+                           android:text="1"
+                           android:textAlignment="center"
+                           android:textSize="20dp"
+                           android:textStyle="bold"/>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/qty_up"
+                               android:id="@+id/orderProduct_quantityNumberAdd"
+                               android:layout_margin="2dp"/>
+
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/qty_down"
+                               android:id="@+id/orderProduct_quantityNumberMinus"
+                               android:layout_margin="2dp"/>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Select Delivery"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/button"
+                android:id="@+id/orderProduct_selectDelivery"
+                android:textColor="@color/white"
+                android:layout_margin="15dp"
+                android:layout_below="@id/linear1"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

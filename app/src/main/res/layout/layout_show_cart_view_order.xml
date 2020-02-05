@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx:xx"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd-mm-yyy"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_date"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Status : "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxxxx"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_orderStatus"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Paid : "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxxxx"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_amountPaid"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status : "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxxxx"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_paymentStatus"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Status : "
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxxxx"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/layoutShowCartViewOrder_deliveryStatus"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Elinam Trendz</string>
+    <string name="app_version">Version 1.2.200</string>
+    <string name="app_year">2018–2019</string>
+
+    <string name="navigation_home">Home</string>
+    <string name="navigation_my_orders">My Orders</string>
+    <string name="navigation_profile">Profile</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+
+    <string-array name="networks">
+        <item>Select Network</item>
+        <item>AirtelTigo</item>
+        <item>Mtn</item>
+        <item>Vodafone</item>
+    </string-array>
+
+    <string-array name="regions">
+        <item>Select your region</item>
+        <item>Greater Accra Region</item>
+        <item>Ashanti Region</item>
+        <item>Bono Region</item>
+        <item>Bono East Region</item>
+        <item>Ahafo Region</item>
+        <item>Central Region</item>
+        <item>Eastern Region</item>
+        <item>Northern Region</item>
+        <item>Savannah Region</item>
+        <item>North East Region</item>
+        <item>Upper East Region</item>
+        <item>Upper West Region</item>
+        <item>Volta Region</item>
+        <item>Oti Region</item>
+        <item>Western Region</item>
+        <item>Western North Region</item>
+    </string-array>
+
+    <string-array name="urgent">
+        <item>Please select</item>
+        <item>Urgent</item>
+        <item>Very Urgent</item>
+        <item>Cannot Wait</item>
+    </string-array>
+
+
+    <string name="title_advertiseText">Promotion!  Promotion!!  Promotion!!!</string>
+    <string name="title_aboutUs">About Us</string>
+    <string name="title_TermAndPrivacyPolicy">Term and Privacy Policy</string>
+    <string name="title_AppInfo">App Info</string>
+    <string name="title_BuyForMe">Buy For Me</string>
+
+    <string name="attribute_facebook">Facebook</string>
+    <string name="attribute_gmail">Gmail</string>
+    <string name="attribute_whatsapp">WhatsApp</string>
+    <string name="attribute_telegram">Telegram</string>
+    <string name="attribute_twitter">Twitter</string>
+    <string name="attribute_event">Event Picture</string>
+    <string name="attribute_product_picture">Product Picture</string>
+    <string name="attribute_product_video">Product Video</string>
+    <string name="attribute_speaker_out">Audio</string>
+    <string name="attribute_discount_percent">Discount Percent</string>
+
+    <string name="ui_chat_us">Chat Us</string>
+    <string name="ui_app_usage">App Usage</string>
+    <string name="ui_app_info">App Info</string>
+    <string name="ui_all_rights_reserved">All rights reserved</string>
+    <string name="ui_year">year</string>
+    <string name="ui_credit">Credit</string>
+    <string name="ui_contact_us">Contact Us</string>
+    <string name="ui_end_on">end on</string>
+    <string name="ui_product_name">Product Name</string>
+    <string name="ui_product_description">Product Description</string>
+    <string name="ui_product_price">Product Price</string>
+    <string name="ui_product_qty_available">Product Qty Available :</string>
+    <string name="_0">0</string>
+    <string name="_0_off">0% off</string>
+    <string name="ui_order_product">Order Product</string>
+    <string name="attribute_line">Line</string>
+    <string name="ui_app_license">App License</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

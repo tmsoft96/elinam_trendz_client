@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment.CategoriesFragment"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageNowAvailable">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/now_available"
+                            android:background="@drawable/now_available" />
+
+                        <ImageView
+                            android:id="@+id/cat_nowAvailable"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Now Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageMadeInGhana">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/made_in_ghana_gif"
+                            android:background="@drawable/made_in_ghana_gif" />
+
+                        <ImageView
+                            android:id="@+id/cat_madeInGhana"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Made in Ghana"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageBulkPurchase">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bulk"
+                            android:background="@drawable/bulk" />
+
+                        <ImageView
+                            android:id="@+id/cat_bulkPurchase"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Bulk Purchase"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageManufactures">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/manufacture_gif"
+                            android:background="@drawable/manufacture_gif" />
+
+                        <ImageView
+                            android:id="@+id/cat_manufactures"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Manufactures"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageYourLocalMarket">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/local"
+                            android:background="@drawable/local" />
+
+                        <ImageView
+                            android:id="@+id/cat_yourLocalMarket"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Your Local Market"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageSlightlyUsed">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/slightly_used"
+                            android:background="@drawable/slightly_used" />
+
+                        <ImageView
+                            android:id="@+id/cat_slightlyUsedProduct"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Slightly Used Product"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageCarCare">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/car"
+                            android:background="@drawable/car" />
+
+                        <ImageView
+                            android:id="@+id/cat_carCare"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/about_us" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="#a4000000"
+                            android:text="Car Care"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageBuyForMe">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/buy_for_me"
+                            android:background="@drawable/buy_for_me" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/about_us"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/cat_buyForMe"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#a4000000"
+                            android:layout_alignParentBottom="true"
+                            android:text="Buy For Me"
+                            android:textStyle="bold"
+                            android:textSize="36sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:id="@+id/cat_pageGlobalTrending">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/global_trends"
+                            android:background="@drawable/global_trends"/>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/about_us"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/cat_globalTrending"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#a4000000"
+                            android:layout_alignParentBottom="true"
+                            android:text="Global Trending"
+                            android:textSize="32sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/category_relative"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/categories_back"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/textbox_white"
+        android:padding="5dp"
+        android:src="@drawable/back" />
+
+</RelativeLayout>

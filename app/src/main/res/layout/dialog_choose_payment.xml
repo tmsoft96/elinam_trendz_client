@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#2a000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/orderProductDialog_makePaymentNow"
+            android:text="Make Payment Now"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@drawable/order_product_dialog_rectangle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:drawableTop="@drawable/make_payment_now" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/orderProductDialog_makePaymentOnDelivery"
+            android:text="Make Payment On Delivery"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@drawable/order_product_dialog_rectangle2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="2dp"
+            android:drawableTop="@drawable/make_payment_on_delivery"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="click to view delivery and order fee"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:id="@+id/orderProductDialog_viewCharges"/>
+
+</LinearLayout>

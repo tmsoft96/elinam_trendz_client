@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    android:background="#1e1e1e">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="x"
+        android:textStyle="bold"
+        android:textColor="#f1ce43"
+        android:textSize="20dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_round_yellow"
+        android:id="@+id/credits_close"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software developed by"
+        android:textSize="20sp"
+        android:textColor="#f1ce43"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/tmsoft"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+233554302776 / +233578469971"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#f1ce43"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tmsoftdesign@aol.com"
+        android:textSize="20sp"
+        android:textColor="#f1ce43"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="year"
+        android:textSize="20sp"
+        android:textColor="#f1ce43"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/credits_year"/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.InnerFragment.NowAvailableFragment">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentNowAvailable_refreshs">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Now Available"
+                                    android:drawableLeft="@drawable/m_available_now"
+                                    android:drawableStart="@drawable/m_available_now"
+                                    android:drawablePadding="20dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:id="@+id/main_textTrending"/>
+
+                                <TextView
+                                    android:id="@+id/fragmentNowAvailable_details"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:padding="5dp"
+                                    android:scrollbars="vertical"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"/>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycler_nowAvailable"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/fragmentNowAvailable_showDetails"
+                            android:background="@drawable/sort_down"/>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/fragmentNowAvailable_hideDetails"
+                            android:background="@drawable/sort_up"
+                            android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

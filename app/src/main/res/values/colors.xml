@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#150877</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="buttonColor">#e84f4b</color>
+    <color name="buttonColorPressed">#f52722</color>
+    <color name="chatOwner">#c6d7fd</color>
+    <color name="black">#000000</color>
+    <color name="grey">#ececec</color>
+    <color name="yellow">#ffd000</color>
+    <color name="unread">#E9D4D4</color>
+</resources>

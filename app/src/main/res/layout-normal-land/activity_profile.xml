@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:background="@drawable/background">
+
+    <include
+        layout="@layout/navigation_toolbar"
+        android:id="@+id/profile_navToobar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/profile_navToobar"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/white"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_image"
+                android:id="@+id/profileProfilePicture"
+                android:layout_marginBottom="10dp"
+                android:elevation="30dp"/>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Click on the image to upload your profile picture"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Full Name"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:background="@drawable/textbox_white"
+                    android:id="@+id/profileFullname"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/fullname"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginBottom="7dp"/>
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:background="@drawable/textbox_white"
+                    android:id="@+id/profilePhoneNumber"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/phone_number"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:inputType="phone"/>
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Town Name"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:background="@drawable/textbox_white"
+                    android:id="@+id/townName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/street_name"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginBottom="7dp"/>
+
+
+                <MultiAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Describe Location"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:background="@drawable/textbox_white"
+                    android:id="@+id/profileLocation"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/locaation"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Save Profile"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/button"
+                    android:id="@+id/btn_saveProfile"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:paddingRight="70dp"
+                    android:paddingLeft="70dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

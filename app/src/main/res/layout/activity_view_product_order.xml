@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewProductOrderActivity"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/main_navigation_toolbar"
+        android:id="@+id/viewProductOrder_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewProductOrder_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/viewProductOrder_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewProductOrder_toolbar"/>
+
+            <fragment
+                android:id="@+id/viewProductOrder_fragment"
+                android:name="com.tmsoft.tm.elinamclient.fragment.OrderFragment.OrderView.ViewSingleOrderFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                tools:layout="@layout/fragment_w_view_single_order"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainToolbar_advertise"
+        android:icon="@drawable/advert"
+        app:showAsAction="always"
+        android:title="advertise" />
+
+    <item
+        android:id="@+id/mainToolbar_search"
+        android:icon="@drawable/search_white"
+        app:showAsAction="always"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/mainToolbar_notification"
+        android:icon="@drawable/notification"
+        app:showAsAction="always"
+        android:title="notification"/>
+
+</menu>

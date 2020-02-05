@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/messagesLayout_profilePicture"
+        android:src="@drawable/profile_image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/chat_background_two"
+        android:orientation="vertical"
+        android:id="@+id/messageLayout_linear">
+
+        <TextView
+            android:id="@+id/messageLayout_displayMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/messageLayout_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Few minute ago"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/chat_background"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/messageLayout_linear_right">
+
+        <TextView
+            android:id="@+id/messageLayout_displayMessageRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/messageLayout_dateRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Few minute ago"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

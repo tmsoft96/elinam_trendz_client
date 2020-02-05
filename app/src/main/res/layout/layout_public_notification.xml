@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutNotification_linear"
+        android:background="@color/unread">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/product"
+            android:padding="10dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:id="@+id/layoutNotification_picture"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:id="@+id/layoutNotification_messageTitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:id="@+id/layoutNotification_message"
+                android:layout_below="@id/layoutNotification_messageTitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxx"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/layoutNotification_time"
+                android:layout_below="@id/layoutNotification_message"
+                android:gravity="end"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
